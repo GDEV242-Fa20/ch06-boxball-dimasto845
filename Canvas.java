@@ -29,6 +29,14 @@ public class Canvas
     {
         this(title, 300, 300, Color.white);
     }
+    
+    public void drawRectangle(int x1, int y1, int width, int height)
+    {
+        graphic.drawRect(x1, y1, width, height);
+        canvas.repaint();
+    }
+    
+    
 
     /**
      * Create a Canvas with default background color (white).
